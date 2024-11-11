@@ -7,7 +7,7 @@ require('dotenv').config();
 const app = express();
 
 // Configure CORS to allow requests from your React app
-app.use(cors({ origin: 'http://localhost:3000' })); // Allows requests from your React app
+app.use(cors({ origin: 'https://nbad-s62-frontend.onrender.com' })); // Allows requests from your React app
 app.use(express.json()); // Parses JSON request bodies
 
 mongoose.connect(process.env.MONGODB_URI, {
