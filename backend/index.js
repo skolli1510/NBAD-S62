@@ -11,7 +11,7 @@ app.use(cors({ origin: 'http://localhost:3000' })); // Allows requests from your
 app.use(express.json()); // Parses JSON request bodies
 
 mongoose.connect(process.env.MONGODB_URI, {
-   serverSelectionTimeoutMS: 5000,
+  serverSelectionTimeoutMS: 5000,
 }).then(() => console.log('Connected to MongoDB'))
 .catch(err => console.error('MongoDB connection error:', err));
 
