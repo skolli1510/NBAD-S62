@@ -27,8 +27,8 @@ const Reports = () => {
   const drawChart = (data) => {
     d3.select('#chart').selectAll('*').remove();
 
-    const width = 800;
-    const height = 425;
+    const width = 700;
+    const height = 400;
     const radius = Math.min(width, height) / 2;
 
     const color = d3.scaleOrdinal(d3.schemeCategory10);
